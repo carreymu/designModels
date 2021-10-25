@@ -6,6 +6,7 @@ package models.singleton;
  */
 public class Singleton01 {
     public static void main(String[] args) {
+        System.out.println("---饿汉式(静态变量)");
         Singleton1 instance = Singleton1.getInstance();
         Singleton1 instance1 = Singleton1.getInstance();
         String result = instance == instance1 ? "True" : "false";

@@ -6,6 +6,7 @@ package models.singleton;
  */
 public class SingleTon02 {
     public static void main(String[] args) {
+        System.out.println("-----饿汉式(静态代码块)");
         Singleton2 instance = Singleton2.getInstance();
         Singleton2 instance1 = Singleton2.getInstance();
         String result = instance == instance1 ? "True" : "false";
@@ -27,11 +28,12 @@ class Singleton2 {
     }
 
     // 2.本类内部创建对象实例
-    private  static Singleton2 instance;
+    private static Singleton2 instance;
 
     static {
         instance = new Singleton2();
     }
+
     // 3.提供一个公有的静态方法,返回实例对象
     public static Singleton2 getInstance() {
         return instance;
