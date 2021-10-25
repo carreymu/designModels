@@ -21,9 +21,10 @@ public class Singleton07 {
 /**
  * 枚举方式
  */
-enum Singleton7{
+enum Singleton7 {
     INSTANCE; // 属性
-    public void saySomething(){
+
+    public void saySomething() {
         System.out.println("hi~~");
     }
 }
