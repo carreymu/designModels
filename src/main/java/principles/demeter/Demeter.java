@@ -10,7 +10,7 @@ import java.util.List;
  * 耦合方式有很多种，依赖，关联，组合，聚合等。其中，我们称出现成员变量，方法参数，方法返回值中的类为直接朋
  * 友，而出现在局部变量中的类不是直接朋友。也就是说，陌生的类最好不要以局部变量形式出现在类的内部。
  */
-public class demeter {
+public class Demeter {
     public static void main(String[] args) {
         SchoolManager schoolManager = new SchoolManager();
         schoolManager.printAllEmployee(new CollegeManager());
