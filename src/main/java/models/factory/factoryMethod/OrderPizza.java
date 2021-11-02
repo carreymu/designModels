@@ -14,7 +14,7 @@ public abstract class OrderPizza {
         do {
             orderType = getType();
             pizza = createPizza(orderType);
-            if(pizza == null){
+            if (pizza == null) {
                 System.out.println("没得Pizza。");
                 return;
             }

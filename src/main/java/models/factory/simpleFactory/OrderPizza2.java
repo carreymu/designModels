@@ -8,6 +8,7 @@ public class OrderPizza2 {
 
     Pizza pizza = null;
     String orderType = "";
+
     public OrderPizza2() {
         do {
             orderType = getType();
