@@ -1,4 +1,4 @@
-package models.adapter.classAdapter;
+package models.adapter.objectAdapter;
 
 public class Phone {
     public void charging(IVoltage5V iVoltage5V){

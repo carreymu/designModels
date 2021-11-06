@@ -1,4 +1,4 @@
-package models.adapter.classAdapter;
+package models.adapter.objectAdapter;
 
 public class Voltage220V {
     public int output220v(){
