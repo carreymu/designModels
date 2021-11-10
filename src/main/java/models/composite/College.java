@@ -15,17 +15,18 @@ public class College extends OrganizationComponent {
 
     @Override
     protected void add(OrganizationComponent organizationComponent) {
-        super.add(organizationComponent);
+        organizationComponents.add(organizationComponent);
     }
 
     @Override
     protected void remove(OrganizationComponent organizationComponent) {
-        super.remove(organizationComponent);
+        organizationComponents.remove(organizationComponent);
     }
 
     @Override
     protected void print() {
-
+        System.out.println("------" + getName() + "-------");
+        organizationComponents.stream().forEach(x -> System.out.println(x.getName() + ">" + x.getDes()));
     }
 
     @Override

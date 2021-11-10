@@ -20,5 +20,8 @@ public class Client {
         university.add(infoCollege);
 
         university.print();
+
+        computerCollege.print();
+        infoCollege.print();
     }
 }

@@ -3,6 +3,7 @@ package models.composite;
 import java.util.ArrayList;
 import java.util.List;
 
+// University管理College
 public class University extends OrganizationComponent {
     List<OrganizationComponent> organizationComponents = new ArrayList<>();
 
@@ -35,7 +36,7 @@ public class University extends OrganizationComponent {
     @Override
     protected void print() {
         System.out.println("------" + getName() + "-------");
-        organizationComponents.stream().forEach(System.out::println);
+        organizationComponents.stream().forEach(x -> System.out.println(x.getName() + "--" + x.getDes()));
     }
 
 }

@@ -3,6 +3,7 @@ package models.composite;
 /**
  * 当我们要处理的对象可以生成一棵树形结构,而我们要对树上的节点和叶子进行操作时,他能够提供
  * 一致的方式，而无需考虑它是节点还是叶子
+ * 叶子节点和非叶子节点有很多地方比较类似时，适合使用组合模式
  */
 public abstract class OrganizationComponent {
     private String name;
