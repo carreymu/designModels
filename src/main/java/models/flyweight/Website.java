@@ -1,5 +1,6 @@
 package models.flyweight;
 
 public abstract class Website {
-    abstract void use();
+    // user使用website
+    abstract void use(User user);
 }

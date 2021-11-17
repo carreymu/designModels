@@ -1,7 +1,5 @@
 package models.flyweight;
 
-import com.sun.javafx.scene.traversal.WeightedClosestCorner;
-
 public class Client {
     public static void main(String[] args) {
 
@@ -10,14 +8,14 @@ public class Client {
 
         // 新闻发布网站
         Website news = factory.getWebsiteCategory("News");
-        news.use();
+        news.use(new User("Kate"));
 
         // 博客发布网站
         Website weibo = factory.getWebsiteCategory("weibo");
-        weibo.use();
+        weibo.use(new User("ZhaoSir"));
 
         Website wb = factory.getWebsiteCategory("weibo");
-        wb.use();
+        wb.use(new User("Jake"));
 
         System.out.println("网站分类数："+factory.getWebsiteCount());
     }
