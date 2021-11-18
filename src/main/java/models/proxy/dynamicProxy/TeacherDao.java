@@ -1,4 +1,4 @@
-package models.proxy.dynamic;
+package models.proxy.dynamicProxy;
 
 public class TeacherDao implements ITeacherDao {
     @Override

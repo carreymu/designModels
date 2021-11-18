@@ -1,4 +1,4 @@
-package models.proxy.dynamic;
+package models.proxy.dynamicProxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

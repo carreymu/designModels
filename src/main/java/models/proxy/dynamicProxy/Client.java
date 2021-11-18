@@ -1,4 +1,4 @@
-package models.proxy.dynamic;
+package models.proxy.dynamicProxy;
 
 public class Client {
     public static void main(String[] args) {
