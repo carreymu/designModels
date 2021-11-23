@@ -1,4 +1,8 @@
 package models.visitor;
 
-public class Woman {
+public class Woman extends Person{
+    @Override
+    void accept(Action action) {
+        action.getWomanResult(this);
+    }
 }
