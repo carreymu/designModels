@@ -1,6 +1,6 @@
 package models.state;
 
-public class DispenseState implements IState{
+public class DispenseState implements IState {
     RaffleActivity raffleActivity;
 
     public DispenseState(RaffleActivity raffleActivity) {
@@ -20,6 +20,15 @@ public class DispenseState implements IState{
 
     @Override
     public void dispensePrize() {
-
+        if (raffleActivity.getCount() > 0) {
+            System.out.println("**恭喜中奖");
+            // 状态-不能抽奖
+            raffleActivity.setState(raffleActivity.getNoRaffleState());
+        } else {
+            System.out.println("**遗憾，奖品发完。");
+            // 状态-发奖完毕
+            raffleActivity.setState(raffleActivity.getDispenseState());
+            System.out.println("**完犊子吧。");
+        }
     }
 }
